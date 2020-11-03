@@ -31,6 +31,7 @@
 
         </ToolBar>
         <StackPanel x:Name="stack" HorizontalAlignment="Left" Height="615" Margin="1010,90,0,0" VerticalAlignment="Top" Width="314" Background="#FFC1ECC7"/>
+        <Canvas x:Name="MyCanvas_Copy" HorizontalAlignment="Left" Height="615" Margin="10,90,0,0" VerticalAlignment="Top" Width="978"/>
 
     </Grid>
 </Window>
