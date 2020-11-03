@@ -5,12 +5,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:wing_page"
         mc:Ignorable="d"
-        Title="MainWindow" Height="745.5" Width="1006">
+        Title="MainWindow" Height="745.5" Width="1342">
     <Grid>
-        <Canvas x:Name="MyCanvas" HorizontalAlignment="Left" Height="615" Margin="10,90,0,0" VerticalAlignment="Top" Width="978" Background="#FFE0AFAF">
-            <Label Content="" Height="108" Canvas.Left="742" Width="226" Background="#FFD1E9FD" Canvas.Top="10"/>
-        </Canvas>
-        <ToolBar HorizontalAlignment="Left" Height="66" Margin="10,10,0,0" VerticalAlignment="Top" Width="978" Background="#FFCEDEF0">
+        <Canvas x:Name="MyCanvas" HorizontalAlignment="Left" Height="615" Margin="10,90,0,0" VerticalAlignment="Top" Width="978" Background="#FFE0AFAF"/>
+        <ToolBar HorizontalAlignment="Left" Height="66" Margin="10,10,0,0" VerticalAlignment="Top" Width="1314" Background="#FFCEDEF0">
             <Button x:Name="in_put_BUT" Content="open file" Height="45" Margin="0,10,0,0" VerticalAlignment="Top" Width="81" Background="#FFADFFB4" Click="in_put_BUT_click"/>
             <Separator Height="46" Margin="0,10,0,0" VerticalAlignment="Top" Width="7"/>
             <Label Content="調整倍率：" Height="24" Margin="0,22,0,0" VerticalAlignment="Top" Width="69" Background="#FFC8CFFF"/>
@@ -23,13 +21,16 @@
             <Separator Height="46" Margin="0,10,0,0" VerticalAlignment="Top" Width="7"/>
             <Button Content="調整" Height="45" Margin="0,10,0,0" VerticalAlignment="Top" Width="81" Background="#FFADE1FF"/>
             <Separator Height="46" Margin="0,10,0,0" VerticalAlignment="Top" Width="7"/>
-            <Button Content="建立下一層" Height="45" Margin="0,10,0,0" VerticalAlignment="Top" Width="81" Background="#FFADE1FF"/>
+            <Button x:Name="next_lay" Content="建立下一層" Height="45" Margin="0,10,0,0" VerticalAlignment="Top" Width="81" Background="#FFADE1FF" Click="next_lay_Click"/>
             <Separator Height="46" Margin="0,10,0,0" VerticalAlignment="Top" Width="7"/>
             <Button Content="刪除/重作這一層" Height="45" Margin="0,10,0,0" VerticalAlignment="Top" Width="101" Background="#FFADE1FF"/>
             <Separator Height="46" Margin="0,10,0,0" VerticalAlignment="Top" Width="7"/>
-            <Button Content="匯出檔案" Height="45" Margin="0,10,0,0" VerticalAlignment="Top" Width="81" Background="#FFADFFB4"/>
+            <Label Content="輸入匯出層數" Height="24" Margin="0,22,0,0" VerticalAlignment="Top" Width="69" Background="#FFC8CFFF"/>
+            <TextBox x:Name="out_put" Height="24" Margin="0,23,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="58"/>
+            <Button x:Name="Out_put_file" Content="匯出檔案" Height="45" Margin="0,10,0,0" VerticalAlignment="Top" Width="81" Background="#FFADFFDA" Click="Out_put_file_Click"/>
 
         </ToolBar>
+        <StackPanel x:Name="stack" HorizontalAlignment="Left" Height="615" Margin="1010,90,0,0" VerticalAlignment="Top" Width="314" Background="#FFC1ECC7"/>
 
     </Grid>
 </Window>
