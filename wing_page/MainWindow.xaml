@@ -7,11 +7,11 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="745.5" Width="1006">
     <Grid>
-        <Canvas HorizontalAlignment="Left" Height="615" Margin="10,90,0,0" VerticalAlignment="Top" Width="978" Background="#FFE0AFAF">
+        <Canvas x:Name="MyCanvas" HorizontalAlignment="Left" Height="615" Margin="10,90,0,0" VerticalAlignment="Top" Width="978" Background="#FFE0AFAF">
             <Label Content="" Height="108" Canvas.Left="742" Width="226" Background="#FFD1E9FD" Canvas.Top="10"/>
         </Canvas>
         <ToolBar HorizontalAlignment="Left" Height="66" Margin="10,10,0,0" VerticalAlignment="Top" Width="978" Background="#FFCEDEF0">
-            <Button Content="open file" Height="45" Margin="0,10,0,0" VerticalAlignment="Top" Width="81" Background="#FFADFFB4"/>
+            <Button x:Name="in_put_BUT" Content="open file" Height="45" Margin="0,10,0,0" VerticalAlignment="Top" Width="81" Background="#FFADFFB4" Click="in_put_BUT_click"/>
             <Separator Height="46" Margin="0,10,0,0" VerticalAlignment="Top" Width="7"/>
             <Label Content="調整倍率：" Height="24" Margin="0,22,0,0" VerticalAlignment="Top" Width="69" Background="#FFC8CFFF"/>
             <TextBox Height="24" Margin="0,23,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="79"/>
